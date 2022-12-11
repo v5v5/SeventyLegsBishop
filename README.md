@@ -1,4 +1,4 @@
-# The multiusers game Seven Hands Bandit
+# The multiusers game Seventy Legs Bishop
 
 Technologies:
 - BackEnd: java, kotlin, gradle
