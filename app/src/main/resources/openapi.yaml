@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Seventy Legs Bishop
+  version: 0.0.1
+servers:
+- url: /
+paths:
+  /play:
+    get:
+      operationId: getPlay
+      responses:
+        "200":
+          description: OK
+      summary: Get three random numbers
+      tags:
+      - game
+      x-accepts: application/json
+      x-tags:
+      - tag: game
+components:
+  schemas: {}

@@ -6,14 +6,34 @@
 
 plugins {
     id 'org.viva.java-application-conventions'
+    id "org.openapi.generator" version "6.2.1"
 }
 
 dependencies {
     implementation 'org.apache.commons:commons-text'
     implementation project(':utilities')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.0.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.0.0'
 }
 
 application {
     // Define the main class for the application.
     mainClass = 'org.viva.app.App'
+}
+
+openApiGenerate {
+    generatorName = "spring"
+    inputSpec = "$rootDir/app/openapi/main.yml".toString()
+    outputDir = "$buildDir/generated".toString()
+    apiPackage = "org.viva.app"
+    invokerPackage = "org.viva.app.invoker"
+    modelPackage = "org.viva.app.model"
+//    All options here https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/spring.md#:~:text=the%20SpringDoc%20integration.-,CONFIG%20OPTIONS,-These%20options%20may
+    configOptions = [
+            sourceFolder: "src/main/java",
+            serviceInterface: "true",
+//            interfaceOnly: "true",
+            useSpringController: "true",
+    ]
 }

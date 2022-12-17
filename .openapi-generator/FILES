@@ -1,0 +1,13 @@
+.openapi-generator-ignore
+README.md
+pom.xml
+src/gen/java/main/org/openapitools/configuration/HomeController.java
+src/gen/java/main/org/openapitools/configuration/SpringDocConfiguration.java
+src/gen/java/main/org/viva/app/ApiUtil.java
+src/gen/java/main/org/viva/app/PlayApi.java
+src/gen/java/main/org/viva/app/PlayApiController.java
+src/gen/java/main/org/viva/app/invoker/OpenApiGeneratorApplication.java
+src/gen/java/main/org/viva/app/invoker/RFC3339DateFormat.java
+src/main/resources/application.properties
+src/main/resources/openapi.yaml
+src/test/java/org/viva/app/invoker/OpenApiGeneratorApplicationTests.java

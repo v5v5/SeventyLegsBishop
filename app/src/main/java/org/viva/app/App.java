@@ -3,19 +3,21 @@
  */
 package org.viva.app;
 
-import org.viva.list.LinkedList;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import static org.viva.utilities.StringUtils.join;
-import static org.viva.utilities.StringUtils.split;
-import static org.viva.app.MessageUtils.getMessage;
+//public class App {
+//    public static void main(String[] args) {
+//        LinkedList tokens;
+//        tokens = split(getMessage());
+//        String result = join(tokens);
+//        System.out.println(WordUtils.capitalize(result));
+//    }
+//}
 
-import org.apache.commons.text.WordUtils;
-
+@SpringBootApplication
 public class App {
     public static void main(String[] args) {
-        LinkedList tokens;
-        tokens = split(getMessage());
-        String result = join(tokens);
-        System.out.println(WordUtils.capitalize(result));
+        SpringApplication.run(App.class, args);
     }
 }
