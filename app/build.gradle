@@ -6,7 +6,8 @@
 
 plugins {
     id 'org.viva.java-application-conventions'
-    id "org.openapi.generator" version "6.2.1"
+//    id "org.openapi.generator" version "6.2.1"
+    id "org.openapi.generator" version "6.1.0"
 }
 
 dependencies {
@@ -32,8 +33,8 @@ openApiGenerate {
 //    All options here https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/spring.md#:~:text=the%20SpringDoc%20integration.-,CONFIG%20OPTIONS,-These%20options%20may
     configOptions = [
             sourceFolder: "src/main/java",
-            serviceInterface: "true",
+//            serviceInterface: "true",
 //            interfaceOnly: "true",
-            useSpringController: "true",
+//            useSpringController: "true",
     ]
 }

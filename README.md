@@ -15,5 +15,10 @@ Scenario:
 - User can log in
 - User plays - send request to get three numbers in range, for example [0..2]
 - If User win then they get awards, for example money
-- Data of every games store to data base
+- Data of every games store to database
 - Admin can read nickname of each player and result of each game
+
+Scenario 2:
+- DeliveryMan delivers products (or messages) to auditories contained users
+- Users have properties: age, gender, industry and others 
+- ...
