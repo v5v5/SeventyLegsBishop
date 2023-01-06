@@ -1,5 +1,5 @@
 package org.viva.app;
 
 public interface Delivery {
-    DeliveryResult deliver(Product product);
+    DeliveryResult deliver(ProductInformation product);
 }
