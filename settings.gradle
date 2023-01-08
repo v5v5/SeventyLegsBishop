@@ -10,3 +10,5 @@
 
 rootProject.name = 'SeventyLegsBishop'
 include('app', 'list', 'utilities')
+include 'deliveryman'
+

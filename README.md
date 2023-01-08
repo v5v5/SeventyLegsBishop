@@ -22,3 +22,10 @@ Scenario 2:
 - DeliveryMan delivers products (or messages) to auditories contained users
 - Users have properties: age, gender, industry and others 
 - ...
+
+I am SpringBoot dummy
+
+Build module `deliveryman` from project  
+````
+gradle build -p deliveryman
+````
